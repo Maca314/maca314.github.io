@@ -1,0 +1,81 @@
+/* --------------------------
+  Base Styles
+--------------------------- */
+body {
+  padding-top: 60px;
+}
+
+h1{
+	font-family: sans-serif;
+	font-size: 1.5em;
+	color:steelblue;
+	font-weight: 100;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+svg {
+	  display: block;
+	  margin: 2em auto 0;
+	  width: 90%;
+	}
+
+
+@media screen and (min-width:480px) {
+	/* --------------------------
+	  Keyframes
+	--------------------------- */
+
+	@keyframes offset{
+		
+		0%{
+			opacity: 0;
+		}
+
+		50%{
+			opacity: 0.7;
+		}
+
+		100%{
+			stroke-dashoffset:0;
+			opacity: 1;
+		}
+	}
+
+	@keyframes fill-it{
+		100%{
+			fill: #333333;
+		}
+	}
+
+		/* --------------------------
+		  Base Styles
+		--------------------------- */
+	.logo-hidden{
+		display: none;
+	}
+
+
+
+	.logo{
+		stroke:#333333;
+		stroke-width:1;
+	}
+
+	.l1{
+		stroke-dasharray:700;
+		stroke-dashoffset:700;
+
+		 animation: offset 4s linear forwards, fill-it 4s 4s forwards;
+	}
+
+	.l2,.l3,.l4,
+	.l5,.l6,.l7,
+	.l8,.l9,.l10{
+		stroke-dasharray:600;
+		stroke-dashoffset:700;
+
+		animation: offset 6s linear forwards, fill-it 5s 4s forwards;
+	}
+
+}
