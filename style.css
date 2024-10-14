@@ -1,0 +1,44 @@
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:0;
+	font-family: 'lato','roboto',sans-serif;
+}
+ 
+.wrap{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+button{
+    box-sizing: border-box;
+    display: block;
+    margin: 8px auto;
+    border-radius:2rem;
+	border-style:none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight:600;
+    width: 150px;
+    background-color: #38CFD9;
+	color: #072A2D;
+    border: 2px solid #38CFD9;
+
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #f7f7f7;
+    transition: all 0.2s ease-in-out;
+}
